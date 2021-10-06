@@ -5,7 +5,9 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -14,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Fragment weixin2fragment=new weixinfragment2();
     private Fragment weixin3fragment=new weixinfragment3();
     private LinearLayout linearLayout1,linearLayout2,linearLayout3,linearLayout4;
+    private ImageView imageView1,imageView2,imageView3,imageView4;
+
     private FragmentManager fragmentMananger;
 
     @Override
@@ -24,6 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout2=findViewById(R.id.linearLayout2);
         linearLayout3=findViewById(R.id.linearLayout3);
         linearLayout4=findViewById(R.id.linearLayout4);
+        imageView1=findViewById(R.id.imageView1);
+        imageView2=findViewById(R.id.imageView2);
+        imageView3=findViewById(R.id.imageView3);
+        imageView4=findViewById(R.id.imageView4);
+
 
 
         linearLayout1.setOnClickListener(this);
@@ -31,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout3.setOnClickListener(this);
         linearLayout4.setOnClickListener(this);
         initfragment();
+        showfragment(0);
+        imageView1.setImageResource(R.drawable.p5);
+
 
     }
 
@@ -52,11 +64,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v){
+        hidebot();
         switch (v.getId()){
-            case R.id.linearLayout1:showfragment(0);break;
-            case R.id.linearLayout2:showfragment(1);break;
-            case R.id.linearLayout3:showfragment(2);break;
-            case R.id.linearLayout4:showfragment(3);break;
+            case R.id.linearLayout1:imageView1.setImageResource(R.drawable.p5);showfragment(0);break;
+            case R.id.linearLayout2:imageView2.setImageResource(R.drawable.p6);showfragment(1);break;
+            case R.id.linearLayout3:imageView3.setImageResource(R.drawable.p7);showfragment(2);break;
+            case R.id.linearLayout4:imageView4.setImageResource(R.drawable.p8);showfragment(3);break;
             default:break;
         }
     }
@@ -71,6 +84,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case 3:transaction.show(weixin3fragment);break;
             default:break;
         }transaction.commit();
+
+    }
+    private void hidebot(){
+        imageView1.setImageResource(R.drawable.a1);
+        imageView2.setImageResource(R.drawable.a2);
+        imageView3.setImageResource(R.drawable.a3);
+        imageView4.setImageResource(R.drawable.a4);
 
     }
 }
