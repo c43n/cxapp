@@ -8,6 +8,7 @@
 
 
     <include
+        android:id="@+id/include"
         layout="@layout/bottom"
         android:layout_width="405dp"
         android:layout_height="84dp"
@@ -31,8 +32,8 @@
 
     <FrameLayout
         android:id="@+id/content"
-        android:layout_width="406dp"
-        android:layout_height="590dp"
+        android:layout_width="413dp"
+        android:layout_height="467dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
@@ -41,5 +42,7 @@
         app:layout_constraintVertical_bias="0.42">
 
     </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
