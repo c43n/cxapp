@@ -3,32 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:visibility="visible">
 
     <ImageView
-        android:id="@+id/imageView41"
+        android:id="@+id/imageView31"
         android:layout_width="match_parent"
-        android:layout_height="328dp"
-        tools:srcCompat="@drawable/b2" />
+        android:layout_height="405dp"
+        android:src="@drawable/b2"
+        tools:src="@drawable/b2" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/textView31"
         android:layout_width="match_parent"
         android:layout_height="41dp"
-        android:text="苹果" />
+        android:gravity="center"
+        android:text="苹果"
+        android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/textView42"
+        android:id="@+id/textView32"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:text="5999" />
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="5999"
+        android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/textView43"
+        android:id="@+id/textView33"
         android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:text="256G" />
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="256G"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="A14芯片"
+        android:textSize="30dp" />
 
 </LinearLayout>

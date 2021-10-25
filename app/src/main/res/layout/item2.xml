@@ -8,27 +8,42 @@
     android:visibility="visible">
 
     <ImageView
-        android:id="@+id/imageView31"
+        android:id="@+id/imageView21"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        tools:srcCompat="@drawable/b1"  />
+        android:layout_height="411dp"
+        android:src="@drawable/b1"
+        tools:src="@drawable/b1" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textView21"
         android:layout_width="match_parent"
-        android:layout_height="41dp"
-        android:text="华为" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="华为"
+        android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/textView22"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:text="6888" />
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="6888"
+        android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/textView23"
         android:layout_width="match_parent"
-        android:layout_height="37dp"
-        android:text="128G" />
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="128G"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="麒麟9000芯片"
+        android:textSize="30dp" />
 
 </LinearLayout>

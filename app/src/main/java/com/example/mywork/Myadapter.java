@@ -1,21 +1,16 @@
 package com.example.mywork;
 
-import android.annotation.SuppressLint;
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import java.util.List;
 import java.util.Map;
-
 import androidx.annotation.NonNull;
-import androidx.collection.CircularArray;
 import androidx.recyclerview.widget.RecyclerView;
 
     public class Myadapter extends RecyclerView.Adapter <Myadapter.MyViewHolder>{
